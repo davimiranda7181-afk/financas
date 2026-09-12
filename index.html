@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finanças Pessoais na Prática — Edição 2026 | E-book PDF + Planilhas Prontas por R$ 19,99</title>
+  <meta name="description" content="Organize seu dinheiro, elimine dívidas e construa sua reserva financeira em 2026 por apenas R$ 19,99. E-book em PDF com 12 capítulos práticos, planilhas prontas para Excel/Google Sheets e garantia de 7 dias.">
+  
+  <!-- OpenGraph Tags -->
+  <meta property="og:title" content="Finanças Pessoais na Prática — O Guia Definitivo 2026">
+  <meta property="og:description" content="Organize seu dinheiro, saia das dívidas e comece a investir com método direto ao ponto por apenas R$ 19,99.">
+  <meta property="og:image" content="assets/ebook_cover.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#000000',
+              dark: '#08080A',
+              surface: '#0F0F12',
+              card: '#121216',
+              border: '#202026',
+              accent: '#00FF87',
+              emerald: '#10B981',
+              gold: '#F59E0B',
+              goldglow: '#FBBF24'
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      background-color: #000000;
+      color: #FFFFFF;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* Pure OLED Dark Glassmorphism */
+    .glass-nav {
+      background: rgba(8, 8, 10, 0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .glass-card {
+      background: #09090C;
+      backdrop-filter: blur(16px);
+      border: 1px solid #1E1E24;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.32, 1);
+    }
+
+    .glass-card:hover {
+      border-color: rgba(0, 255, 135, 0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px -12px rgba(0, 255, 135, 0.2);
+    }
+
+    .glass-gold-card {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, #0D0D10 100%);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+    }
+
+    /* Neon Emerald & Gold Ambient Glows */
+    .glow-neon {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0, 255, 135, 0.22) 0%, rgba(0, 255, 135, 0) 70%);
+      filter: blur(70px);
+      pointer-events: none;
+    }
+
+    .glow-gold {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.18) 0%, rgba(245, 158, 11, 0) 70%);
+      filter: blur(80px);
+      pointer-events: none;
+    }
+
+    /* Shimmer Button Effect */
+    .btn-shimmer {
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-shimmer::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      width: 25%;
+      height: 200%;
+      background: rgba(255, 255, 255, 0.4);
+      transform: rotate(30deg);
+      transition: all 0.65s ease;
+    }
+    .btn-shimmer:hover::after {
+      left: 140%;
+    }
+
+    /* Slider Input Styling */
+    input[type=range] {
+      -webkit-appearance: none;
+      background: #18181C;
+      height: 8px;
+      border-radius: 4px;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      background: #00FF87;
+      cursor: pointer;
+      box-shadow: 0 0 16px rgba(0, 255, 135, 0.9);
+      transition: transform 0.15s ease;
+    }
+    input[type=range]::-webkit-slider-thumb:hover {
+      transform: scale(1.2);
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 15px rgba(0, 255, 135, 0.3); }
+      50% { box-shadow: 0 0 30px rgba(0, 255, 135, 0.7); }
+    }
+    .pulse-glow {
+      animation: pulse-glow 2.5s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="antialiased text-zinc-100 bg-black overflow-x-hidden selection:bg-brand-accent selection:text-black">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <aside aria-label="Notificação de Oferta" class="bg-zinc-950 border-b border-zinc-800 text-xs py-2.5 px-4 text-center sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap font-medium">
+      <span class="inline-flex items-center gap-1.5 bg-amber-500/20 text-amber-300 px-2.5 py-0.5 rounded-full border border-amber-500/40 text-[11px] font-bold uppercase tracking-wider">
+        <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-400"></i> LOTE COM 80% OFF
+      </span>
+      <span class="text-zinc-300">Desconto especial de R$ 97 por apenas <strong>R$ 19,99</strong> expira em:</span>
+      <span id="countdown-timer" class="font-mono font-bold text-amber-400 bg-black px-2 py-0.5 rounded border border-amber-400/40">14:59</span>
+      <a href="#oferta" class="underline text-emerald-400 font-bold hover:text-emerald-300 ml-2">GARANTIR MEU ACESSO POR R$ 19,99 →</a>
+    </div>
+  </aside>
+
+  <!-- HEADER NAVIGATION -->
+  <header class="glass-nav sticky top-9 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- LOGO -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-400 to-teal-600 flex items-center justify-center shadow-lg shadow-emerald-500/30 group-hover:scale-105 transition-transform">
+          <i data-lucide="trending-up" class="w-6 h-6 text-black font-extrabold"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-1.5">
+            <span class="font-display font-extrabold text-xl tracking-tight text-white">FINANÇAS</span>
+            <span class="font-mono text-xs font-bold text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded border border-emerald-500/30">2026</span>
+          </div>
+          <p class="font-mono text-[10px] text-zinc-400 tracking-widest uppercase">NA PRÁTICA</p>
+        </div>
+      </a>
+
+      <!-- NAVIGATION LINKS -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-300">
+        <a href="#o-que-recebe" class="hover:text-emerald-400 transition-colors">O Que Recebo</a>
+        <a href="#metodo" class="hover:text-emerald-400 transition-colors">O Método</a>
+        <a href="#capitulos" class="hover:text-emerald-400 transition-colors">Capítulos</a>
+        <a href="#simulador" class="hover:text-emerald-400 transition-colors">Simulador</a>
+        <a href="#bonus" class="hover:text-emerald-400 transition-colors">Bônus</a>
+        <a href="#depoimentos" class="hover:text-emerald-400 transition-colors">Depoimentos</a>
+        <a href="#faq" class="hover:text-emerald-400 transition-colors">FAQ</a>
+      </nav>
+
+      <!-- HEADER CTA -->
+      <div class="flex items-center gap-3">
+        <a href="#oferta" class="btn-shimmer bg-gradient-to-r from-emerald-400 to-teal-300 hover:from-emerald-300 hover:to-teal-200 text-black font-extrabold text-xs sm:text-sm px-5 py-2.5 rounded-full shadow-lg shadow-emerald-500/30 transition-all flex items-center gap-2">
+          <span>QUERO O MEU — R$ 19,99</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-12 pb-24 md:pt-20 md:pb-32 overflow-hidden border-b border-zinc-900 bg-black">
+    <!-- Ambient Glows -->
+    <div class="glow-neon w-[600px] h-[600px] -top-30 -left-30"></div>
+    <div class="glow-gold w-[500px] h-[500px] top-40 -right-30"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- LEFT COLUMN: COPYWRITING -->
+        <div class="lg:col-span-7 space-y-8">
+          
+          <!-- BADGE -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-xs font-mono tracking-wide">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+            <span class="text-zinc-200">E-BOOK PDF + 2 PLANILHAS + 2 GUIA BÔNUS</span>
+          </div>
+
+          <!-- HEADLINE -->
+          <h1 class="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl leading-[1.06] tracking-tight">
+            O dinheiro <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400">não some</span> <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-500">de novo.</span>
+          </h1>
+
+          <!-- SUBTITLE -->
+          <p class="text-lg md:text-xl text-zinc-300 max-w-2xl leading-relaxed">
+            Você não é desorganizado. Você está apenas no modo automático. <strong class="text-white font-bold">Finanças Pessoais na Prática</strong> é o e-book de 12 capítulos + planilhas automáticas que devolvem o controle absoluto do seu dinheiro antes do dia 30.
+          </p>
+
+          <!-- RATING SOCIAL PROOF -->
+          <div class="flex items-center gap-4 py-2 border-y border-zinc-800/80 max-w-md">
+            <div class="flex text-amber-400 text-sm">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <span class="text-sm font-semibold text-white font-mono">4.9/5.0</span>
+            <span class="text-zinc-600 text-xs">|</span>
+            <span class="text-xs text-zinc-400">+2.840 leitores transformados em 2026</span>
+          </div>
+
+          <!-- CTA BUTTON GROUP -->
+          <div class="space-y-4 pt-2">
+            <div class="flex flex-wrap items-center gap-4">
+              
+              <!-- MAIN CTA BUTTON -->
+              <a href="#oferta" class="btn-shimmer pulse-glow bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-500 hover:from-emerald-300 hover:to-teal-200 text-black font-extrabold text-lg px-8 py-4 rounded-full shadow-2xl shadow-emerald-500/40 transition-all transform hover:-translate-y-1 flex items-center gap-3">
+                <span>QUERO SAIR DO MODO AUTOMÁTICO</span>
+                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+              </a>
+
+              <!-- PRICE BADGE -->
+              <div class="font-mono bg-zinc-900/90 border border-zinc-800 px-4 py-2 rounded-2xl">
+                <div class="text-[11px] text-zinc-400 line-through">De R$ 97,00</div>
+                <div class="text-2xl font-extrabold text-emerald-400">R$ 19<span class="text-xs text-zinc-300 font-normal">,99</span></div>
+              </div>
+            </div>
+
+            <!-- SECONDARY CTA LINK -->
+            <div>
+              <a href="#o-que-recebe" class="inline-flex items-center gap-2 text-xs font-mono text-zinc-400 hover:text-emerald-400 transition-colors">
+                <i data-lucide="eye" class="w-4 h-4 text-emerald-400"></i>
+                <span>Ver exatamente tudo que você vai receber no seu e-mail ↓</span>
+              </a>
+            </div>
+
+            <!-- TRUST SEALS -->
+            <div class="flex flex-wrap items-center gap-6 text-xs text-zinc-400 font-medium pt-3">
+              <div class="flex items-center gap-1.5">
+                <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Garantia Incondicional 7 Dias</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <i data-lucide="zap" class="w-4 h-4 text-amber-400"></i>
+                <span>Envio Imediato no E-mail</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <i data-lucide="file-text" class="w-4 h-4 text-teal-400"></i>
+                <span>PDF + Excel + Sheets</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: 3D BUNDLE DISPLAY -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <div class="absolute -inset-4 bg-gradient-to-r from-emerald-500/30 to-amber-500/20 rounded-3xl blur-2xl opacity-60"></div>
+            
+            <div class="relative rounded-2xl glass-card p-3 sm:p-4 border border-zinc-800 shadow-2xl group">
+              <img src="assets/bundle_mockup.jpg" alt="Kit Completo Finanças Pessoais na Prática 2026" class="w-full h-auto rounded-xl shadow-2xl object-cover transform group-hover:scale-[1.02] transition-transform duration-500">
+              
+              <!-- FLOATING CARD 1 -->
+              <div class="absolute -top-5 -left-5 bg-zinc-950/95 border border-zinc-800 text-xs p-3 rounded-2xl shadow-2xl flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">
+                  <i data-lucide="mail-check" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-white text-xs">Entrega Automática</p>
+                  <p class="text-[10px] text-zinc-400">Receba em < 1 minuto no e-mail</p>
+                </div>
+              </div>
+
+              <!-- FLOATING CARD 2 -->
+              <div class="absolute -bottom-5 -right-3 bg-zinc-950/95 border border-zinc-800 text-xs p-3.5 rounded-2xl shadow-2xl flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">
+                  <i data-lucide="gift" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-white text-xs">Kit Completo 2026</p>
+                  <p class="text-[10px] text-zinc-400">1 E-book + 4 Ferramentas Bônus</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: O QUE VOCÊ VAI RECEBER EXATAMENTE (REALISTIC DELIVERABLES) -->
+  <section id="o-que-recebe" class="py-24 bg-zinc-950 border-b border-zinc-900 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="font-mono text-xs font-bold text-emerald-400 bg-emerald-500/10 px-3.5 py-1 rounded-full border border-emerald-500/30 uppercase tracking-widest">
+          TRANSPARÊNCIA TOTAL
+        </span>
+        <h2 class="mt-4 font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+          O Que Você Recebe Imediatamente no Seu E-mail
+        </h2>
+        <p class="mt-3 text-zinc-400 text-base sm:text-lg">
+          Sem pegadinhas, sem mensalidades ocultas e sem surpresas. Veja o inventário completo do seu kit digital ao garantir seu acesso hoje:
+        </p>
+      </div>
+
+      <!-- DELIVERABLES GRID -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- ITEM 1: EBOOK -->
+        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between border-t-2 border-t-emerald-400">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center">
+                <i data-lucide="book-open" class="w-5 h-5"></i>
+              </span>
+              <span class="font-mono text-[11px] text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded border border-emerald-500/20 font-bold">FORMATO PDF</span>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white">1. E-book Principal "Finanças Pessoais na Prática"</h3>
+            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
+              Guia completo de 12 capítulos práticos (115 páginas). Formato PDF compatível com qualquer celular, tablet, computador ou leitores digitais como Kindle.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80 text-xs font-mono text-zinc-400">
+            ✓ Leitura simples, direta e sem jargões
+          </div>
+        </div>
+
+        <!-- ITEM 2: PLANILHA ORÇAMENTO -->
+        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between border-t-2 border-t-emerald-400">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center">
+                <i data-lucide="calculator" class="w-5 h-5"></i>
+              </span>
+              <span class="font-mono text-[11px] text-teal-300 bg-teal-500/10 px-2.5 py-0.5 rounded border border-teal-500/20 font-bold">EXCEL / SHEETS</span>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white">2. Planilha Pronta de Orçamento Mensal</h3>
+            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
+              Planilha pronta em `.xlsx` e `Google Sheets` com fórmulas pré-configuradas de saldo automático e categorização de despesas (divisão 50/30/20).
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80 text-xs font-mono text-zinc-400">
+            ✓ Basta preencher os números do mês
+          </div>
+        </div>
+
+        <!-- ITEM 3: PLANILHA DÍVIDAS -->
+        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between border-t-2 border-t-amber-400">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center">
+                <i data-lucide="layers" class="w-5 h-5"></i>
+              </span>
+              <span class="font-mono text-[11px] text-amber-400 bg-amber-500/10 px-2.5 py-0.5 rounded border border-amber-500/20 font-bold">EXCEL / SHEETS</span>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white">3. Planilha Tática de Controle de Dívidas</h3>
+            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
+              Planilha para listar credores, juros, parcelas e ordenação automática pela estratégia Bola de Neve vs. Avalanche para zerar dívidas rápido.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80 text-xs font-mono text-zinc-400">
+            ✓ Ordem exata de prioridade de pagamento
+          </div>
+        </div>
+
+        <!-- ITEM 4: DESAFIO 30 DIAS -->
+        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between border-t-2 border-t-teal-300">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/30 text-teal-300 flex items-center justify-center">
+                <i data-lucide="calendar-check" class="w-5 h-5"></i>
+              </span>
+              <span class="font-mono text-[11px] text-teal-300 bg-teal-500/10 px-2.5 py-0.5 rounded border border-teal-500/20 font-bold">PDF INTERATIVO</span>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white">4. Desafio Prático de 30 Dias</h3>
+            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
+              Guia em PDF interativo com 1 tarefa diária simples de 5 minutos para criar novos hábitos e estancar vazamentos de orçamento no 1º mês.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80 text-xs font-mono text-zinc-400">
+            ✓ 1 micro-ação guiada por dia
+          </div>
+        </div>
+
+        <!-- ITEM 5: GLOSSÁRIO -->
+        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between border-t-2 border-t-zinc-400">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-10 h-10 rounded-xl bg-zinc-800 border border-zinc-700 text-zinc-300 flex items-center justify-center">
+                <i data-lucide="file-text" class="w-5 h-5"></i>
+              </span>
+              <span class="font-mono text-[11px] text-zinc-300 bg-zinc-800 px-2.5 py-0.5 rounded font-bold">PDF GUIA</span>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white">5. Glossário Financeiro sem Jargões</h3>
+            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
+              Guia de consulta rápida em PDF onde cada termo (CDB, Selic, Liquidez, FGC, FIIs) é explicado em apenas 1 linha em linguagem clara.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80 text-xs font-mono text-zinc-400">
+            ✓ Consulta rápida para tiragem de dúvidas
+          </div>
+        </div>
+
+        <!-- ITEM 6: GARANTIA -->
+        <div class="glass-gold-card rounded-2xl p-7 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 text-amber-400 flex items-center justify-center">
+                <i data-lucide="shield-check" class="w-5 h-5"></i>
+              </span>
+              <span class="font-mono text-[11px] text-amber-400 bg-amber-500/10 px-2.5 py-0.5 rounded border border-amber-500/30 font-bold">7 DIAS DE TESTE</span>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white">6. Garantia de Satisfação de 7 Dias</h3>
+            <p class="text-zinc-300 text-sm mt-2 leading-relaxed">
+              Você testa o e-book e todas as planilhas por 7 dias. Se por qualquer motivo não gostar, enviamos 100% do seu dinheiro de volta sem burocracia.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-amber-500/30 text-xs font-mono text-amber-400 font-bold">
+            ✓ Risco Zero garantido para você
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MID-PAGE ACTION CTA BANNER -->
+      <div class="mt-14 glass-card rounded-3xl p-8 border border-emerald-500/30 text-center space-y-6">
+        <h3 class="font-display font-extrabold text-2xl sm:text-3xl text-white">
+          Tudo isso por um investimento único de apenas <span class="text-emerald-400 font-mono">R$ 19,99</span>
+        </h3>
+        <p class="text-zinc-300 text-sm max-w-xl mx-auto">
+          Preço simbólico e por tempo limitado para tornar o controle financeiro acessível a todos em 2026.
+        </p>
+        <div>
+          <a href="#oferta" class="btn-shimmer inline-flex items-center gap-3 bg-gradient-to-r from-emerald-400 to-teal-300 hover:from-emerald-300 text-black font-extrabold text-base px-8 py-4 rounded-full shadow-xl shadow-emerald-500/30 transition-all transform hover:scale-105">
+            <span>QUERO RECEBER MEU KIT DIGITAL POR R$ 19,99 →</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: A VERDADE DURA (HARD TRUTH & METRICS) -->
+  <section class="py-20 bg-black border-b border-zinc-900 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl">
+        <p class="font-mono text-xs font-bold tracking-widest text-emerald-400 uppercase">A VERDADE DURA</p>
+        <h2 class="mt-3 font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight leading-tight">
+          O dinheiro some antes do fim do mês.
+        </h2>
+        <p class="mt-4 text-zinc-400 text-base sm:text-lg">
+          O problema nunca foi o quanto você ganha, mas sim a ausência de um mapa tático de controle de vazamentos.
+        </p>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-3 gap-6">
+        
+        <!-- CARD 1 -->
+        <div class="glass-card rounded-2xl p-8 relative overflow-hidden group">
+          <div class="text-5xl sm:text-6xl font-mono font-extrabold text-amber-400 mb-4">4</div>
+          <h3 class="font-display font-bold text-lg text-white mb-2">Passos para Saída das Dívidas</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed">
+            É exatamente o que separa você da tranquilidade — na ordem correta, sem renegociações abusivas ou desespero.
+          </p>
+          <div class="mt-6 pt-4 border-t border-zinc-800 text-xs font-mono text-amber-400 flex items-center gap-1">
+            <span>Explorado no Capítulo 04</span> <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="glass-card rounded-2xl p-8 relative overflow-hidden group">
+          <div class="text-5xl sm:text-6xl font-mono font-extrabold text-emerald-400 mb-4">7</div>
+          <h3 class="font-display font-bold text-lg text-white mb-2">Dias de Raio-X Financeiro</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed">
+            Anotando cada gasto do jeito certo revelam o vazamento invisível e silencioso que consome até 30% da sua renda.
+          </p>
+          <div class="mt-6 pt-4 border-t border-zinc-800 text-xs font-mono text-emerald-400 flex items-center gap-1">
+            <span>Explorado no Capítulo 02</span> <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="glass-card rounded-2xl p-8 relative overflow-hidden group">
+          <div class="text-5xl sm:text-6xl font-mono font-extrabold text-teal-300 mb-4">0</div>
+          <h3 class="font-display font-bold text-lg text-white mb-2">Motivos para Continuar Assim</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed">
+            O método é extremamente simples e comprovado. A única engrenagem que falta é você dar o primeiro passo hoje.
+          </p>
+          <div class="mt-6 pt-4 border-t border-zinc-800 text-xs font-mono text-teal-300 flex items-center gap-1">
+            <span>Garantia de 7 Dias Inclusa</span> <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA BANNER INLINE -->
+      <div class="mt-12 text-center">
+        <a href="#oferta" class="btn-shimmer inline-flex items-center gap-3 bg-zinc-900 border border-zinc-800 hover:border-emerald-500/50 text-white font-extrabold text-sm px-7 py-3.5 rounded-full shadow-lg transition-all">
+          <span>CHEGA DE VER O DINHEIRO ESCORRER — QUERO MEU PLANO (R$ 19,99) →</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE CALCULATOR / SIMULATOR SECTION -->
+  <section id="simulador" class="py-24 bg-zinc-950 border-b border-zinc-900 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="font-mono text-xs font-bold text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20 uppercase tracking-widest">
+          SIMULADOR INTERATIVO DE ECONOMIA
+        </span>
+        <h2 class="mt-4 font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+          Calcule Quanto Você Pode Resgatar
+        </h2>
+        <p class="mt-3 text-zinc-400 text-base sm:text-lg">
+          Arraste os seletores abaixo para simular o valor estimado que você pode guardar em 1 ano aplicando as técnicas do e-book.
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto glass-card rounded-3xl p-6 sm:p-10 border border-zinc-800 shadow-2xl">
+        <div class="grid md:grid-cols-12 gap-8 items-center">
+          
+          <!-- SLIDERS INPUT -->
+          <div class="md:col-span-7 space-y-8">
+            
+            <!-- SLIDER 1: RENDA MENSUAL -->
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label for="income-slider" class="text-sm font-semibold text-zinc-200">Renda Mensal Familiar:</label>
+                <span id="income-val" class="font-mono font-bold text-emerald-400 text-lg">R$ 4.500</span>
+              </div>
+              <input type="range" id="income-slider" min="2000" max="20000" step="500" value="4500" class="w-full">
+              <div class="flex justify-between text-[11px] text-zinc-500 font-mono mt-1">
+                <span>R$ 2.000</span>
+                <span>R$ 20.000</span>
+              </div>
+            </div>
+
+            <!-- SLIDER 2: GASTOS NÃO MONITORADOS -->
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label for="waste-slider" class="text-sm font-semibold text-zinc-200">Gastos 'Invisíveis' / Assinaturas por mês:</label>
+                <span id="waste-val" class="font-mono font-bold text-amber-400 text-lg">R$ 350</span>
+              </div>
+              <input type="range" id="waste-slider" min="50" max="1500" step="50" value="350" class="w-full">
+              <div class="flex justify-between text-[11px] text-zinc-500 font-mono mt-1">
+                <span>R$ 50</span>
+                <span>R$ 1.500</span>
+              </div>
+            </div>
+
+            <!-- SLIDER 3: DÍVIDAS / CARTÃO -->
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label for="debt-slider" class="text-sm font-semibold text-zinc-200">Valor em Dívidas ou Fatura Acumulada:</label>
+                <span id="debt-val" class="font-mono font-bold text-teal-300 text-lg">R$ 3.000</span>
+              </div>
+              <input type="range" id="debt-slider" min="0" max="30000" step="1000" value="3000" class="w-full">
+              <div class="flex justify-between text-[11px] text-zinc-500 font-mono mt-1">
+                <span>Zero</span>
+                <span>R$ 30.000+</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RESULT CARD -->
+          <div class="md:col-span-5 bg-black rounded-2xl p-6 border border-zinc-800 text-center space-y-5">
+            <div class="text-xs font-mono uppercase tracking-widest text-zinc-400">Economia Anual Estimada</div>
+            <div id="annual-savings" class="text-4xl font-display font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-500">
+              R$ 4.650,00
+            </div>
+            
+            <div class="p-3 rounded-xl bg-emerald-950/40 border border-emerald-500/20 text-xs text-emerald-300 leading-relaxed">
+              💡 Investindo apenas <strong>R$ 19,99</strong> hoje, seu investimento se paga no mesmo dia após aplicar o Raio-X do Capítulo 02.
+            </div>
+
+            <a href="#oferta" class="btn-shimmer block w-full bg-emerald-400 hover:bg-emerald-300 text-black font-extrabold text-sm py-3.5 rounded-xl shadow-lg shadow-emerald-500/30 transition-colors">
+              RESGATAR MINHA ECONOMIA AGORA →
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: METHODOLOGY (O QUE VOCÊ VAI APRENDER) -->
+  <section id="metodo" class="py-24 bg-black border-b border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid lg:grid-cols-12 gap-12 items-start">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <span class="font-mono text-xs font-bold text-emerald-400 uppercase tracking-widest">(a) O MÉTODO</span>
+          <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight leading-tight">
+            O que você vai aprender na prática
+          </h2>
+          <p class="text-zinc-400 text-base leading-relaxed">
+            Sem misticismo, sem promessas absurdas de enriquecimento rápido e sem planilhas complexas de 40 abas. Um sistema direto que cabe na sua rotina e roda com tranquilidade todo mês.
+          </p>
+          <div class="pt-4">
+            <a href="#oferta" class="btn-shimmer inline-flex items-center gap-2 bg-gradient-to-r from-emerald-400 to-teal-300 text-black font-extrabold text-sm px-6 py-3 rounded-full shadow-lg shadow-emerald-500/20">
+              <span>APLICAR O MÉTODO COMPLETO POR R$ 19,99 →</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-4">
+          
+          <!-- ITEM 1 -->
+          <div class="glass-card rounded-xl p-5 flex items-start gap-5">
+            <div class="shrink-0 w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono font-bold flex items-center justify-center">
+              01
+            </div>
+            <div>
+              <h3 class="font-display font-bold text-lg text-white">Enxergar com clareza para onde o seu dinheiro vai</h3>
+              <p class="text-zinc-400 text-sm mt-1">Como mapear pequenos vazamentos diários e eliminar os drenos do cartão sem cortar o café.</p>
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="glass-card rounded-xl p-5 flex items-start gap-5">
+            <div class="shrink-0 w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono font-bold flex items-center justify-center">
+              02
+            </div>
+            <div>
+              <h3 class="font-display font-bold text-lg text-white">Montar um orçamento realista e funcional</h3>
+              <p class="text-zinc-400 text-sm mt-1">Um modelo de divisão de orçamento em percentuais simples que não exige horas de digitação.</p>
+            </div>
+          </div>
+
+          <!-- ITEM 3 -->
+          <div class="glass-card rounded-xl p-5 flex items-start gap-5">
+            <div class="shrink-0 w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono font-bold flex items-center justify-center">
+              03
+            </div>
+            <div>
+              <h3 class="font-display font-bold text-lg text-white">Sair das dívidas com o método dos 4 passos</h3>
+              <p class="text-zinc-400 text-sm mt-1">Estratégia comprovada para priorizar credores, congelar juros abusivos e negociar descontos reais.</p>
+            </div>
+          </div>
+
+          <!-- ITEM 4 -->
+          <div class="glass-card rounded-xl p-5 flex items-start gap-5">
+            <div class="shrink-0 w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono font-bold flex items-center justify-center">
+              04
+            </div>
+            <div>
+              <h3 class="font-display font-bold text-lg text-white">Construir sua reserva de emergência</h3>
+              <p class="text-zinc-400 text-sm mt-1">Mesmo começando pequeno com R$ 50 por mês. Como criar o hábito e ter paz para dormir.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: THE 12 CHAPTERS (INTERACTIVE EXPLORER) -->
+  <section id="capitulos" class="py-24 bg-zinc-950 border-b border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="font-mono text-xs font-bold text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20 uppercase tracking-widest">
+          (b) ÍNDICE COMPLETO DO E-BOOK
+        </span>
+        <h2 class="mt-4 font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+          Os 12 Capítulos Inclusos no PDF
+        </h2>
+        <p class="mt-3 text-zinc-400 text-base sm:text-lg">
+          Clique sobre qualquer capítulo para espiar o conteúdo detalhado e o objetivo prático de aprendizado.
+        </p>
+      </div>
+
+      <!-- GRID OF 12 CHAPTERS -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" id="chapters-grid">
+        
+        <!-- CHAPTER 1 -->
+        <button onclick="openChapterModal(1)" class="glass-card rounded-2xl p-6 text-left hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-mono text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">CAP. 01</span>
+            <i data-lucide="eye" class="w-4 h-4 text-zinc-500 group-hover:text-emerald-400 transition-colors"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white group-hover:text-emerald-300 transition-colors">A verdade sobre o seu dinheiro</h3>
+          <p class="text-zinc-400 text-xs mt-2 line-clamp-2">Entenda a psicologia por trás dos seus gastos involuntários e como virar a chave mental.</p>
+        </button>
+
+        <!-- CHAPTER 2 -->
+        <button onclick="openChapterModal(2)" class="glass-card rounded-2xl p-6 text-left hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-mono text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">CAP. 02</span>
+            <i data-lucide="eye" class="w-4 h-4 text-zinc-500 group-hover:text-emerald-400 transition-colors"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white group-hover:text-emerald-300 transition-colors">Descubra para onde seu dinheiro está indo</h3>
+          <p class="text-zinc-400 text-xs mt-2 line-clamp-2">O teste de 7 dias do Raio-X Financeiro que localiza vazamentos invisíveis do cartão.</p>
+        </button>
+
+        <!-- CHAPTER 3 -->
+        <button onclick="openChapterModal(3)" class="glass-card rounded-2xl p-6 text-left hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-mono text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">CAP. 03</span>
+            <i data-lucide="eye" class="w-4 h-4 text-zinc-500 group-hover:text-emerald-400 transition-colors"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white group-hover:text-emerald-300 transition-colors">Como montar seu orçamento</h3>
+          <p class="text-zinc-400 text-xs mt-2 line-clamp-2">A estrutura de divisão 50/30/20 adaptada para a realidade da família brasileira.</p>
+        </button>
+
+        <!-- CHAPTER 4 -->
+        <button onclick="openChapterModal(4)" class="glass-card rounded-2xl p-6 text-left hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-mono text-xs font-bold text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded border border-amber-500/20">CAP. 04</span>
+            <i data-lucide="eye" class="w-4 h-4 text-zinc-500 group-hover:text-amber-400 transition-colors"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white group-hover:text-amber-300 transition-colors">O método para sair das dívidas</h3>
+          <p class="text-zinc-400 text-xs mt-2 line-clamp-2">Estratégia de 4 passos: mapeamento, bola de neve vs. avalanche, e negociação com bancos.</p>
+        </button>
+
+        <!-- CHAPTER 5 -->
+        <button onclick="openChapterModal(5)" class="glass-card rounded-2xl p-6 text-left hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-mono text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">CAP. 05</span>
+            <i data-lucide="eye" class="w-4 h-4 text-zinc-500 group-hover:text-emerald-400 transition-colors"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white group-hover:text-emerald-300 transition-colors">Como criar sua reserva financeira</h3>
+          <p class="text-zinc-400 text-xs mt-2 line-clamp-2">Quanto guardar, onde deixar investido com liquidez diária e segurança total.</p>
+        </button>
+
+        <!-- CHAPTER 6 -->
+        <button onclick="openChapterModal(6)" class="glass-card rounded-2xl p-6 text-left hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-mono text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">CAP. 06</span>
+            <i data-lucide="eye" class="w-4 h-4 text-zinc-500 group-hover:text-emerald-400 transition-colors"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white group-hover:text-emerald-300 transition-colors">Como economizar sem viver mal</h3>
+          <p class="text-zinc-400 text-xs mt-2 line-clamp-2">Cortes inteligentes que mantêm sua qualidade de vida e momentos de lazer.</p>
+        </button>
+
+        <!-- CHAPTER 7 -->
+        <button onclick="openChapterModal(7)" class="glass-card rounded-2xl p-6 text-left hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-mono text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">CAP. 07</span>
+            <i data-lucide="eye" class="w-4 h-4 text-zinc-500 group-hover:text-emerald-400 transition-colors"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white group-hover:text-emerald-300 transition-colors">Primeiros passos nos investimentos</h3>
+          <p class="text-zinc-400 text-xs mt-2 line-clamp-2">Desmistificando o mercado financeiro sem usar jargões difíceis ou complicados.</p>
+        </button>
+
+        <!-- CHAPTER 8 -->
+        <button onclick="openChapterModal(8)" class="glass-card rounded-2xl p-6 text-left hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-mono text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">CAP. 08</span>
+            <i data-lucide="eye" class="w-4 h-4 text-zinc-500 group-hover:text-emerald-400 transition-colors"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white group-hover:text-emerald-300 transition-colors">Renda fixa explicada para iniciantes</h3>
+          <p class="text-zinc-400 text-xs mt-2 line-clamp-2">Tesouro Direto, CDBs, LCI/LCA com FGC: o que escolher e como aplicar na prática.</p>
+        </button>
+
+        <!-- CHAPTER 9 -->
+        <button onclick="openChapterModal(9)" class="glass-card rounded-2xl p-6 text-left hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-mono text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">CAP. 09</span>
+            <i data-lucide="eye" class="w-4 h-4 text-zinc-500 group-hover:text-emerald-400 transition-colors"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white group-hover:text-emerald-300 transition-colors">Renda variável e os principais riscos</h3>
+          <p class="text-zinc-400 text-xs mt-2 line-clamp-2">Ações e Fundos Imobiliários (FIIs): o que saber antes de dar qualquer passo.</p>
+        </button>
+
+        <!-- CHAPTER 10 -->
+        <button onclick="openChapterModal(10)" class="glass-card rounded-2xl p-6 text-left hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-mono text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">CAP. 10</span>
+            <i data-lucide="eye" class="w-4 h-4 text-zinc-500 group-hover:text-emerald-400 transition-colors"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white group-hover:text-emerald-300 transition-colors">Como definir objetivos financeiros</h3>
+          <p class="text-zinc-400 text-xs mt-2 line-clamp-2">Transformando metas genéricas (viagem, carro, casa) em prazos e números reais.</p>
+        </button>
+
+        <!-- CHAPTER 11 -->
+        <button onclick="openChapterModal(11)" class="glass-card rounded-2xl p-6 text-left hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-mono text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">CAP. 11</span>
+            <i data-lucide="eye" class="w-4 h-4 text-zinc-500 group-hover:text-emerald-400 transition-colors"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white group-hover:text-emerald-300 transition-colors">Como aumentar sua renda</h3>
+          <p class="text-zinc-400 text-xs mt-2 line-clamp-2">Estratégias práticas para fazer renda extra usando suas habilidades atuais.</p>
+        </button>
+
+        <!-- CHAPTER 12 -->
+        <button onclick="openChapterModal(12)" class="glass-card rounded-2xl p-6 text-left hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-mono text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">CAP. 12</span>
+            <i data-lucide="eye" class="w-4 h-4 text-zinc-500 group-hover:text-emerald-400 transition-colors"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white group-hover:text-emerald-300 transition-colors">Seu plano financeiro de 90 dias</h3>
+          <p class="text-zinc-400 text-xs mt-2 line-clamp-2">O roteiro definitivo dia a dia para consolidar seus novos hábitos e manter os resultados.</p>
+        </button>
+
+      </div>
+
+      <!-- CTA BELOW CHAPTERS -->
+      <div class="mt-12 text-center">
+        <a href="#oferta" class="btn-shimmer inline-flex items-center gap-3 bg-gradient-to-r from-emerald-400 to-teal-300 hover:from-emerald-300 text-black font-extrabold text-base px-9 py-4 rounded-full shadow-xl shadow-emerald-500/30 transition-all transform hover:scale-105">
+          <span>QUERO ACESSAR OS 12 CAPÍTULOS POR R$ 19,99 →</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: BONUSES & TOOLS SHOWCASE -->
+  <section id="bonus" class="py-24 bg-black border-b border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="font-mono text-xs font-bold text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20 uppercase tracking-widest">
+          (c) FERRAMENTAS BÔNUS INCLUSAS
+        </span>
+        <h2 class="mt-4 font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+          Você Leva R$ 240 em Ferramentas Grátis
+        </h2>
+        <p class="mt-3 text-zinc-400 text-base sm:text-lg">
+          Além do e-book completo em PDF, você recebe 4 ferramentas táticas projetadas para colocar seu plano em prática imediatamente.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- SPREADSHEET PREVIEW IMAGE -->
+        <div class="lg:col-span-6">
+          <div class="glass-card rounded-2xl p-4 border border-zinc-800 shadow-2xl relative">
+            <div class="absolute top-6 right-6 bg-emerald-400 text-black text-xs font-extrabold font-mono px-3.5 py-1 rounded-full shadow">
+              EXCEL + SHEETS
+            </div>
+            <img src="assets/spreadsheet_preview.jpg" alt="Preview da Planilha de Orçamento Mensal" class="w-full h-auto rounded-xl object-cover">
+          </div>
+        </div>
+
+        <!-- BONUSES LIST -->
+        <div class="lg:col-span-6 space-y-5">
+          
+          <!-- BONUS 1 -->
+          <div class="glass-gold-card rounded-2xl p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 font-mono font-bold flex items-center justify-center shrink-0">
+                01
+              </div>
+              <div>
+                <span class="text-[11px] font-mono text-amber-400 font-bold uppercase">Planilha Automática</span>
+                <h3 class="font-display font-bold text-lg text-white">Planilha de Orçamento Mensal</h3>
+                <p class="text-zinc-300 text-sm mt-1">Entradas, saídas e saldo do mês organizados de uma vez sem fórmulas complexas.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- BONUS 2 -->
+          <div class="glass-card rounded-2xl p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 font-mono font-bold flex items-center justify-center shrink-0">
+                02
+              </div>
+              <div>
+                <span class="text-[11px] font-mono text-emerald-400 font-bold uppercase">Ferramenta Antidívida</span>
+                <h3 class="font-display font-bold text-lg text-white">Planilha de Controle de Dívidas</h3>
+                <p class="text-zinc-300 text-sm mt-1">Credor, juros, prioridade de quitação e vencimento unificados em um único lugar.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- BONUS 3 -->
+          <div class="glass-card rounded-2xl p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-teal-500/20 text-teal-300 font-mono font-bold flex items-center justify-center shrink-0">
+                03
+              </div>
+              <div>
+                <span class="text-[11px] font-mono text-teal-300 font-bold uppercase">Plano Hábito</span>
+                <h3 class="font-display font-bold text-lg text-white">Desafio Financeiro de 30 Dias</h3>
+                <p class="text-zinc-300 text-sm mt-1">Uma micro-tarefa diária e guiada em PDF para fixar o hábito financeiro de verdade.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- BONUS 4 -->
+          <div class="glass-card rounded-2xl p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-zinc-800 text-zinc-300 font-mono font-bold flex items-center justify-center shrink-0">
+                04
+              </div>
+              <div>
+                <span class="text-[11px] font-mono text-zinc-400 font-bold uppercase">Guia de Consulta</span>
+                <h3 class="font-display font-bold text-lg text-white">Glossário Financeiro Descomplicado</h3>
+                <p class="text-zinc-300 text-sm mt-1">Cada termo do mercado explicado em apenas uma linha, sem termos em inglês chatos.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CTA BUTTON INSIDE BONUSES -->
+      <div class="mt-12 text-center">
+        <a href="#oferta" class="btn-shimmer inline-flex items-center gap-3 bg-gradient-to-r from-emerald-400 to-teal-300 text-black font-extrabold text-base px-8 py-4 rounded-full shadow-xl shadow-emerald-500/30 transition-all transform hover:scale-105">
+          <span>QUERO O E-BOOK + AS 4 FERRAMENTAS BÔNUS POR R$ 19,99 →</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: TESTIMONIALS (QUEM JÁ APLICOU) -->
+  <section id="depoimentos" class="py-24 bg-zinc-950 border-b border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="font-mono text-xs font-bold text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20 uppercase tracking-widest">
+          (e) QUEM JÁ APLICOU
+        </span>
+        <h2 class="mt-4 font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+          Resultados Reais de Pessoas Comuns
+        </h2>
+        <p class="mt-3 text-zinc-400 text-base sm:text-lg">
+          Veja o depoimento de quem decidiu parar de assistir o dinheiro escorrer e aplicou o método.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <!-- TESTIMONIAL 1 -->
+        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-sm mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-zinc-300 text-sm leading-relaxed italic">
+              "Em 3 semanas parei de usar o cartão de crédito para fechar o mês. O teste de Raio-X Financeiro do Capítulo 02 abriu meus olhos de um jeito impressionante."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800 flex items-center justify-between">
+            <div>
+              <p class="font-bold text-white text-sm">Camila R.</p>
+              <p class="text-xs text-zinc-400">São Paulo — SP</p>
+            </div>
+            <span class="inline-flex items-center gap-1 text-[11px] text-emerald-400 font-mono">
+              <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> Compradora Verificada
+            </span>
+          </div>
+        </div>
+
+        <!-- TESTIMONIAL 2 -->
+        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-sm mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-zinc-300 text-sm leading-relaxed italic">
+              "Direto ao ponto, sem enrolação teórica. Consegui montar minha primeira reserva de emergência e cortei 4 assinaturas mensais que nem usava."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800 flex items-center justify-between">
+            <div>
+              <p class="font-bold text-white text-sm">Rafael M.</p>
+              <p class="text-xs text-zinc-400">Recife — PE</p>
+            </div>
+            <span class="inline-flex items-center gap-1 text-[11px] text-emerald-400 font-mono">
+              <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> Comprador Verificado
+            </span>
+          </div>
+        </div>
+
+        <!-- TESTIMONIAL 3 -->
+        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-sm mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-zinc-300 text-sm leading-relaxed italic">
+              "Parecia impossível equilibrar dois salários e organizar nossas faturas. O desafio financeiro de 30 dias devolveu o fôlego da nossa família."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800 flex items-center justify-between">
+            <div>
+              <p class="font-bold text-white text-sm">Aline & Pedro</p>
+              <p class="text-xs text-zinc-400">Curitiba — PR</p>
+            </div>
+            <span class="inline-flex items-center gap-1 text-[11px] text-emerald-400 font-mono">
+              <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> Compradores Verificados
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA BUTTON INSIDE TESTIMONIALS -->
+      <div class="mt-12 text-center">
+        <a href="#oferta" class="btn-shimmer inline-flex items-center gap-3 bg-gradient-to-r from-emerald-400 to-teal-300 text-black font-extrabold text-base px-8 py-4 rounded-full shadow-xl shadow-emerald-500/30 transition-all transform hover:scale-105">
+          <span>QUERO TER ESSES MESMOS RESULTADOS POR R$ 19,99 →</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OFFER SECTION (HIGH-CONVERTING CHECKOUT CONTAINER) -->
+  <section id="oferta" class="py-24 bg-gradient-to-b from-black via-zinc-950 to-black border-b border-zinc-900 relative">
+    
+    <div class="glow-gold w-[600px] h-[600px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="max-w-4xl mx-auto glass-gold-card rounded-3xl p-8 sm:p-12 border border-amber-500/50 shadow-2xl relative overflow-hidden">
+        
+        <!-- TAG OFERTA -->
+        <div class="inline-flex items-center gap-2 bg-amber-500 text-black font-mono font-extrabold text-xs px-4 py-1.5 rounded-full uppercase tracking-wider shadow mb-6">
+          <i data-lucide="flame" class="w-4 h-4"></i> OFERTA DE LANÇAMENTO 2026 — 80% OFF
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- LEFT: OFFER DETAILS -->
+          <div class="lg:col-span-7 space-y-6">
+            <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
+              Garanta seu Kit Completo por Apenas R$ 19,99
+            </h2>
+
+            <ul class="space-y-3.5 text-sm text-zinc-200">
+              <li class="flex items-center gap-3">
+                <div class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 font-bold">
+                  ✓
+                </div>
+                <span><strong>E-book Finanças Pessoais na Prática</strong> (12 capítulos em PDF)</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 font-bold">
+                  ✓
+                </div>
+                <span><strong>Planilha de Orçamento Mensal</strong> (.xlsx + Google Sheets)</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 font-bold">
+                  ✓
+                </div>
+                <span><strong>Planilha de Controle de Dívidas</strong> (.xlsx + Google Sheets)</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 font-bold">
+                  ✓
+                </div>
+                <span><strong>Desafio Financeiro de 30 Dias</strong> (PDF Guiado)</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 font-bold">
+                  ✓
+                </div>
+                <span><strong>Glossário Financeiro Descomplicado</strong> (PDF de Consulta)</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 font-bold">
+                  ✓
+                </div>
+                <span><strong>Garantia Incondicional de Reembolso de 7 Dias</strong></span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- RIGHT: PRICING CARD -->
+          <div class="lg:col-span-5 bg-black rounded-2xl p-6 sm:p-8 border border-amber-500/40 text-center space-y-6">
+            
+            <span class="text-xs font-mono uppercase text-zinc-400 tracking-widest">PAGAMENTO ÚNICO · SEM MENSALIDADES</span>
+
+            <div>
+              <div class="text-zinc-400 text-sm line-through">De R$ 97,00 por apenas</div>
+              <div class="text-5xl font-display font-extrabold text-white mt-1">
+                R$ 19<span class="text-xl text-emerald-400">,99</span>
+              </div>
+              <div class="text-xs text-emerald-400 font-mono mt-1">ou em até 2x de R$ 10,40 no cartão</div>
+            </div>
+
+            <button onclick="openCheckoutModal()" class="btn-shimmer pulse-glow w-full bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-500 hover:from-emerald-300 text-black font-extrabold text-lg py-4 rounded-xl shadow-2xl shadow-emerald-500/40 transition-all transform hover:scale-[1.02] flex items-center justify-center gap-2">
+              <span>QUERO COMEÇAR POR R$ 19,99 →</span>
+            </button>
+
+            <div class="space-y-2 text-[11px] text-zinc-400 font-mono">
+              <div class="flex items-center justify-center gap-2 text-emerald-400 font-bold">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+                <span>Compra 100% Segura · Envio Imediato</span>
+              </div>
+              <p>O arquivo PDF e os links das planilhas são enviados na hora no seu e-mail.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: GUARANTEE (RISCO ZERO) -->
+  <section class="py-20 bg-black border-b border-zinc-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="glass-card rounded-3xl p-8 sm:p-12 flex flex-col md:flex-row items-center gap-8 border border-amber-500/30">
+        
+        <div class="shrink-0">
+          <img src="assets/guarantee_badge.jpg" alt="Selo 7 dias de Garantia Incondicional" class="w-36 h-36 rounded-2xl object-cover border border-amber-500/40 shadow-2xl">
+        </div>
+
+        <div class="space-y-3 text-center md:text-left">
+          <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-white">
+            Garantia Incondicional de 7 Dias
+          </h2>
+          <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
+            Se em até 7 dias após a compra você ler o material, aplicar os exercícios e sentir que ele não gerou clareza ou valor real para o seu orçamento, basta enviar um e-mail para o nosso suporte. Devolvemos <strong>100% do seu dinheiro</strong> sem burocracia, sem perguntas e sem letrinhas miúdas. O risco é todo nosso.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: FAQ (PERGUNTAS DIRETAS) -->
+  <section id="faq" class="py-24 bg-zinc-950">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="font-mono text-xs font-bold text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20 uppercase tracking-widest">
+          (f) DÚVIDAS FREQUENTES
+        </span>
+        <h2 class="mt-4 font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+          Perguntas Diretas
+        </h2>
+      </div>
+
+      <!-- FAQ ACCORDION -->
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="glass-card rounded-2xl overflow-hidden">
+          <button onclick="toggleFaq(1)" class="w-full p-6 text-left font-display font-bold text-lg text-white flex items-center justify-between gap-4">
+            <span>Funciona para quem já está com dívidas ou com nome sujo?</span>
+            <i id="faq-icon-1" data-lucide="chevron-down" class="w-5 h-5 text-emerald-400 transition-transform"></i>
+          </button>
+          <div id="faq-ans-1" class="hidden px-6 pb-6 text-zinc-300 text-sm leading-relaxed border-t border-zinc-800/80 pt-4">
+            Sim! O Capítulo 04 é inteiramente dedicado a um método simples de 4 passos para mapear, organizar e priorizar o pagamento de dívidas. Você aprenderá como negociar sem comprometer a sua subsistência, parando de pagar juros abusivos.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="glass-card rounded-2xl overflow-hidden">
+          <button onclick="toggleFaq(2)" class="w-full p-6 text-left font-display font-bold text-lg text-white flex items-center justify-between gap-4">
+            <span>Preciso ter conhecimento prévio em finanças ou matemática?</span>
+            <i id="faq-icon-2" data-lucide="chevron-down" class="w-5 h-5 text-emerald-400 transition-transform"></i>
+          </button>
+          <div id="faq-ans-2" class="hidden px-6 pb-6 text-zinc-300 text-sm leading-relaxed border-t border-zinc-800/80 pt-4">
+            Não! Se você sabe fazer somas e subtrações básicas, você tem tudo o que precisa. O e-book foi escrito em linguagem 100% prática e livre de jargões técnicos. Além disso, as planilhas bônus já vêm com todas as fórmulas prontas para você apenas preencher seus valores.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="glass-card rounded-2xl overflow-hidden">
+          <button onclick="toggleFaq(3)" class="w-full p-6 text-left font-display font-bold text-lg text-white flex items-center justify-between gap-4">
+            <span>Como e quando vou receber o e-book e as planilhas?</span>
+            <i id="faq-icon-3" data-lucide="chevron-down" class="w-5 h-5 text-emerald-400 transition-transform"></i>
+          </button>
+          <div id="faq-ans-3" class="hidden px-6 pb-6 text-zinc-300 text-sm leading-relaxed border-t border-zinc-800/80 pt-4">
+            O acesso é imediato! Assim que seu pagamento for confirmado (pagamentos via PIX ou Cartão de Crédito são aprovados em menos de 1 minuto), você receberá um e-mail com os links para download direto do e-book em PDF e de todas as planilhas bônus.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="glass-card rounded-2xl overflow-hidden">
+          <button onclick="toggleFaq(4)" class="w-full p-6 text-left font-display font-bold text-lg text-white flex items-center justify-between gap-4">
+            <span>E se eu ler e achar que o conteúdo não é para mim?</span>
+            <i id="faq-icon-4" data-lucide="chevron-down" class="w-5 h-5 text-emerald-400 transition-transform"></i>
+          </button>
+          <div id="faq-ans-4" class="hidden px-6 pb-6 text-zinc-300 text-sm leading-relaxed border-t border-zinc-800/80 pt-4">
+            Você conta com nossa garantia total de 7 dias. Basta solicitar o reembolso através do e-mail de suporte dentro do prazo e devolveremos 100% do valor pago imediatamente, sem perguntas e sem complicação.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LEGAL DISCLAIMER -->
+  <section class="py-8 bg-black border-t border-zinc-900 text-xs text-zinc-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center leading-relaxed">
+      <p>AVISO LEGAL — Este material tem finalidade estritamente educacional e informativa. Não constitui recomendação personalizada de investimento nem consultoria financeira individual. Os resultados são individuais e dependem da aplicação prática do leitor. Investimentos em renda variável possuem riscos e podem gerar perdas.</p>
+      <p class="mt-2 text-zinc-600">© 2026 Finanças Pessoais na Prática. Todos os direitos reservados.</p>
+    </div>
+  </section>
+
+  <!-- FIXED BOTTOM MOBILE CTA BAR -->
+  <aside aria-label="Acesso Rápido" class="fixed bottom-0 left-0 right-0 z-40 bg-black/95 backdrop-blur-md border-t border-zinc-800 p-3 shadow-2xl">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      <div>
+        <div class="font-display font-bold text-xs sm:text-sm text-white">FINANÇAS PESSOAIS NA PRÁTICA</div>
+        <div class="font-mono text-[11px] text-emerald-400">
+          <span class="line-through text-zinc-500 mr-1.5">R$ 97</span> R$ 19,99 (Pagamento Único)
+        </div>
+      </div>
+
+      <a href="#oferta" class="btn-shimmer bg-emerald-400 hover:bg-emerald-300 text-black font-extrabold text-xs sm:text-sm px-6 py-2.5 rounded-full shadow-lg shadow-emerald-500/30 whitespace-nowrap">
+        QUERO MEU ACESSO POR R$ 19,99 →
+      </a>
+    </div>
+  </aside>
+
+  <!-- CHAPTER DETAILS MODAL -->
+  <div id="chapter-modal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="glass-card bg-zinc-950 rounded-3xl max-w-lg w-full p-6 sm:p-8 border border-zinc-800 shadow-2xl relative">
+      <button onclick="closeChapterModal()" class="absolute top-5 right-5 text-zinc-400 hover:text-white p-1">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <span id="modal-cap-num" class="font-mono text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20 uppercase">
+        CAPÍTULO 01
+      </span>
+
+      <h3 id="modal-cap-title" class="font-display font-extrabold text-2xl text-white mt-4">
+        Título do Capítulo
+      </h3>
+
+      <p id="modal-cap-desc" class="text-zinc-300 text-sm mt-3 leading-relaxed">
+        Descrição do capítulo...
+      </p>
+
+      <div class="mt-6 pt-4 border-t border-zinc-800 space-y-2">
+        <p class="text-xs font-mono text-zinc-400"><strong>Objetivo Prático:</strong> <span id="modal-cap-goal">Objetivo</span></p>
+        <p class="text-xs font-mono text-zinc-400"><strong>Tempo de Leitura:</strong> <span id="modal-cap-time">15 minutos</span></p>
+      </div>
+
+      <div class="mt-6">
+        <a href="#oferta" onclick="closeChapterModal()" class="btn-shimmer block w-full bg-emerald-400 hover:bg-emerald-300 text-black font-extrabold text-center py-3.5 rounded-xl">
+          ACESSAR ESTE CAPÍTULO EM PDF AGORA (R$ 19,99)
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIMULATED CHECKOUT MODAL -->
+  <div id="checkout-modal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="glass-card bg-zinc-950 rounded-3xl max-w-md w-full p-6 sm:p-8 border border-amber-500/40 shadow-2xl relative">
+      <button onclick="closeCheckoutModal()" class="absolute top-5 right-5 text-zinc-400 hover:text-white p-1">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="text-center space-y-3">
+        <div class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto">
+          <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+        </div>
+        <h3 class="font-display font-extrabold text-2xl text-white">Finalizar Pedido Seguro</h3>
+        <p class="text-xs text-zinc-300">Envio imediato no seu e-mail · Garantia 7 Dias</p>
+      </div>
+
+      <form onsubmit="handleCheckout(event)" class="mt-6 space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-zinc-300 mb-1">Seu Nome Completo:</label>
+          <input type="text" required placeholder="Digite seu nome" class="w-full bg-black border border-zinc-800 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-emerald-400">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-zinc-300 mb-1">Seu Melhor E-mail (para envio do PDF e planilhas):</label>
+          <input type="email" required placeholder="seuemail@exemplo.com" class="w-full bg-black border border-zinc-800 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-emerald-400">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-zinc-300 mb-1">Forma de Pagamento Preferida:</label>
+          <div class="grid grid-cols-3 gap-2 text-xs font-mono">
+            <label class="p-2.5 rounded-xl border border-emerald-500/50 bg-emerald-500/10 text-emerald-400 flex flex-col items-center gap-1 cursor-pointer">
+              <input type="radio" name="pay" value="pix" checked class="hidden">
+              <i data-lucide="qr-code" class="w-4 h-4"></i> PIX (Imediato)
+            </label>
+            <label class="p-2.5 rounded-xl border border-zinc-800 bg-black text-zinc-300 flex flex-col items-center gap-1 cursor-pointer">
+              <input type="radio" name="pay" value="card" class="hidden">
+              <i data-lucide="credit-card" class="w-4 h-4"></i> Cartão (2x)
+            </label>
+            <label class="p-2.5 rounded-xl border border-zinc-800 bg-black text-zinc-300 flex flex-col items-center gap-1 cursor-pointer">
+              <input type="radio" name="pay" value="boleto" class="hidden">
+              <i data-lucide="file-text" class="w-4 h-4"></i> Boleto
+            </label>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <button type="submit" class="btn-shimmer w-full bg-gradient-to-r from-emerald-400 to-teal-300 hover:from-emerald-300 text-black font-extrabold text-sm py-3.5 rounded-xl shadow-lg shadow-emerald-500/30">
+            CONCLUIR PEDIDO — R$ 19,99
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- LIVE SOCIAL PROOF NOTIFICATION TOAST -->
+  <div id="social-proof-toast" class="fixed bottom-20 left-4 z-40 hidden sm:flex items-center gap-3 bg-zinc-950 border border-zinc-800 text-white text-xs p-3.5 rounded-2xl shadow-2xl backdrop-blur-md max-w-xs transition-all duration-500">
+    <div class="w-9 h-9 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 font-bold">
+      <i data-lucide="user-check" class="w-5 h-5"></i>
+    </div>
+    <div>
+      <p class="font-bold text-zinc-100" id="toast-name">Mariana S. (São Paulo)</p>
+      <p class="text-[11px] text-zinc-400">Adquiriu o e-book + planilhas há <span id="toast-time">3 minutos</span></p>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // COUNTDOWN TIMER LOGIC
+    function startCountdown() {
+      let duration = 14 * 60 + 59; // 14m 59s
+      const timerDisplay = document.getElementById('countdown-timer');
+      
+      setInterval(() => {
+        let minutes = Math.floor(duration / 60);
+        let seconds = duration % 60;
+
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+
+        if (timerDisplay) {
+          timerDisplay.textContent = `${minutes}:${seconds}`;
+        }
+
+        if (--duration < 0) {
+          duration = 14 * 60 + 59;
+        }
+      }, 1000);
+    }
+    startCountdown();
+
+    // INTERACTIVE CALCULATOR LOGIC
+    const incomeSlider = document.getElementById('income-slider');
+    const wasteSlider = document.getElementById('waste-slider');
+    const debtSlider = document.getElementById('debt-slider');
+
+    const incomeVal = document.getElementById('income-val');
+    const wasteVal = document.getElementById('waste-val');
+    const debtVal = document.getElementById('debt-val');
+    const annualSavingsDisplay = document.getElementById('annual-savings');
+
+    function updateCalculator() {
+      const income = parseInt(incomeSlider.value);
+      const waste = parseInt(wasteSlider.value);
+      const debt = parseInt(debtSlider.value);
+
+      incomeVal.textContent = `R$ ${income.toLocaleString('pt-BR')}`;
+      wasteVal.textContent = `R$ ${waste.toLocaleString('pt-BR')}`;
+      debtVal.textContent = `R$ ${debt.toLocaleString('pt-BR')}`;
+
+      // Estimated annual savings formula: (waste * 12) + (debt * 0.15)
+      const estimatedSavings = (waste * 12) + Math.round(debt * 0.15);
+      annualSavingsDisplay.textContent = `R$ ${estimatedSavings.toLocaleString('pt-BR')},00`;
+    }
+
+    [incomeSlider, wasteSlider, debtSlider].forEach(slider => {
+      slider.addEventListener('input', updateCalculator);
+    });
+
+    // CHAPTER MODAL DATA & LOGIC
+    const chapterDetails = {
+      1: { title: "A verdade sobre o seu dinheiro", desc: "Mapeia as armadilhas psicológicas que nos fazem gastar no automático e como reprogramar o hábito diário de consumo.", goal: "Identificar os gatilhos emocionais de compra.", time: "12 minutos" },
+      2: { title: "Descubra para onde seu dinheiro está indo", desc: "Apresenta o método do Raio-X Financeiro de 7 dias para capturar vazamentos invisíveis do cartão de crédito.", goal: "Estancar vazamentos de até 30% do orçamento.", time: "18 minutos" },
+      3: { title: "Como montar seu orçamento", desc: "Passo a passo para distribuir sua renda mensal sem complicação, dividindo em necessidades, desejos e futuro.", goal: "Criar um orçamento funcional para o mês.", time: "20 minutos" },
+      4: { title: "O método para sair das dívidas", desc: "Estratégia de 4 passos para mapear dívidas, congelar juros, priorizar credores e negociar até 80% de desconto.", goal: "Montar plano de quitação acelerado.", time: "25 minutos" },
+      5: { title: "Como criar sua reserva financeira", desc: "Aprenda exatamente quanto guardar e em quais aplicações de liquidez diária alocar para ter paz mental.", goal: "Construir os primeiros R$ 1.000 de reserva.", time: "15 minutos" },
+      6: { title: "Como economizar sem viver mal", desc: "Técnicas de corte cirúrgico de custos fixos e variáveis sem abrir mão dos momentos de lazer com a família.", goal: "Reduzir custos sem perda de qualidade de vida.", time: "16 minutos" },
+      7: { title: "Primeiros passos nos investimentos", desc: "Introdução simplificada sobre como multiplicar seu dinheiro com segurança a partir de R$ 30,00.", goal: "Fazer a primeira aplicação com confiança.", time: "22 minutos" },
+      8: { title: "Renda fixa explicada para iniciantes", desc: "Análise clara sobre Tesouro Selic, CDBs, LCI/LCA com FGC e liquidez diária.", goal: "Dominar investimentos de baixo risco.", time: "20 minutos" },
+      9: { title: "Renda variável e os principais riscos", desc: "O que você precisa saber sobre Ações e Fundos Imobiliários antes de expor seu dinheiro ao mercado.", goal: "Compreender oscilações e rendimentos passivos.", time: "24 minutos" },
+      10: { title: "Como definir objetivos financeiros", desc: "Metodologia SMART para transformar sonhos abstratos em prazos e aportes mensais calculados.", goal: "Planejar grandes conquistas (carro, casa, viagem).", time: "14 minutos" },
+      11: { title: "Como aumentar sua renda", desc: "Guia prático com estratégias ativas e passivas para gerar renda extra usando suas habilidades atuais.", goal: "Adicionar uma nova fonte de renda no mês.", time: "19 minutos" },
+      12: { title: "Seu plano financeiro de 90 dias", desc: "Roteiro executável dia a dia para consolidar o hábito, manter a disciplina e garantir a tranquilidade financeira.", goal: "Consolidar a rotina financeira sustentável.", time: "25 minutos" }
+    };
+
+    function openChapterModal(num) {
+      const data = chapterDetails[num];
+      if (!data) return;
+
+      document.getElementById('modal-cap-num').textContent = `CAPÍTULO ${num < 10 ? '0' + num : num}`;
+      document.getElementById('modal-cap-title').textContent = data.title;
+      document.getElementById('modal-cap-desc').textContent = data.desc;
+      document.getElementById('modal-cap-goal').textContent = data.goal;
+      document.getElementById('modal-cap-time').textContent = data.time;
+
+      document.getElementById('chapter-modal').classList.remove('hidden');
+    }
+
+    function closeChapterModal() {
+      document.getElementById('chapter-modal').classList.add('hidden');
+    }
+
+    // CHECKOUT MODAL LOGIC
+    function openCheckoutModal() {
+      document.getElementById('checkout-modal').classList.remove('hidden');
+    }
+    function closeCheckoutModal() {
+      document.getElementById('checkout-modal').classList.add('hidden');
+    }
+    function handleCheckout(e) {
+      e.preventDefault();
+      alert('🎉 Parabéns! Seu pedido foi simulado com sucesso. Em um ambiente real, você seria redirecionado à página de pagamento seguro.');
+      closeCheckoutModal();
+    }
+
+    // FAQ ACCORDION LOGIC
+    function toggleFaq(id) {
+      const ans = document.getElementById(`faq-ans-${id}`);
+      const icon = document.getElementById(`faq-icon-${id}`);
+
+      if (ans.classList.contains('hidden')) {
+        ans.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      } else {
+        ans.classList.add('hidden');
+        icon.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    // SOCIAL PROOF TOAST SIMULATOR
+    const buyers = [
+      { name: "Mariana S. (São Paulo - SP)", time: "há 2 minutos" },
+      { name: "Lucas F. (Belo Horizonte - MG)", time: "há 5 minutos" },
+      { name: "Patricia K. (Porto Alegre - RS)", time: "há 1 minuto" },
+      { name: "Rodrigo T. (Brasília - DF)", time: "há 4 minutos" },
+      { name: "Beatriz M. (Salvador - BA)", time: "há 3 minutos" }
+    ];
+
+    function showSocialProofToast() {
+      const toast = document.getElementById('social-proof-toast');
+      const randomBuyer = buyers[Math.floor(Math.random() * buyers.length)];
+
+      document.getElementById('toast-name').textContent = randomBuyer.name;
+      document.getElementById('toast-time').textContent = randomBuyer.time;
+
+      toast.classList.remove('hidden');
+
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 5000);
+    }
+
+    // Trigger toast periodically
+    setTimeout(showSocialProofToast, 4000);
+    setInterval(showSocialProofToast, 18000);
+  </script>
+</body>
+</html>
